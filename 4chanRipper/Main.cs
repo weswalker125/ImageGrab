@@ -72,20 +72,27 @@ namespace chanRipper
 				
 				foreach(string imageUrl in tokens)
 				{
-					if(imageUrl.Contains("http://images.4chan.org"))
+					try
 					{
-						string imageName;
-						imageName = imageUrl.Substring(imageUrl.LastIndexOf("/"));
-						imageName = saveDirectory + imageName;
-							
-						ImageRetriever imgRetriever = new ImageRetriever();
-						//Get image:
-						Image currentPicture = null;
-						currentPicture = imgRetriever.GetImage(imageUrl);
-						//Write image to disk:
-						imgRetriever.SaveImage(currentPicture, imageName);
+						if(imageUrl.Contains("http://images.4chan.org"))
+						{
+							string imageName;
+							imageName = imageUrl.Substring(imageUrl.LastIndexOf("/"));
+							imageName = saveDirectory + imageName;
+								
+							ImageRetriever imgRetriever = new ImageRetriever();
+							//Get image:
+							Image currentPicture = null;
+							currentPicture = imgRetriever.GetImage(imageUrl);
+							//Write image to disk:
+							imgRetriever.SaveImage(currentPicture, imageName);
 						
-						
+						}
+					}
+					catch(Exception ex)
+					{
+						Console.WriteLine(ex.ToString());
+						continue;
 					}
 				}
 			}

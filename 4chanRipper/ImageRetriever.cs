@@ -70,7 +70,10 @@ namespace chanRipper
 		
 		public void SaveImage(Image picture, string savePath)
 		{
-			picture.Save(savePath);
+				picture.Save(savePath);
+			
+			if(File.Exists(savePath))
+			   Console.WriteLine("File saved...  " + savePath.Substring(savePath.LastIndexOf("/")));
 		}
 	}
 }

@@ -1,11 +1,6 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" ctype="Workspace" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="4chanRipper/Main.cs" ctype="Workbench">
-    <Files>
-      <File FileName="4chanRipper/Main.cs" Line="25" Column="4" />
-      <File FileName="4chanRipper/ImageRetriever.cs" Line="21" Column="50" />
-    </Files>
-  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench ctype="Workbench" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

@@ -1,0 +1,9 @@
+Implement graphical interface via Cocoa
+
+Exception Handling implementation,
+	timeouts
+	broken links
+	etc
+		--skip to next
+		
+Clean up code?

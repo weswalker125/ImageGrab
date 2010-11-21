@@ -22,7 +22,7 @@ namespace chanRipper
 			string URL = args[0];
 			
 			//http://boards.4chan.org/s/res/10822814#q10822814
-			string saveDirectory = "/4chan_download/" + URL.Substring(URL.LastIndexOf("/"));
+			string saveDirectory = @"C:\4chan_download\" + URL.Substring(URL.LastIndexOf("/"));
 			
 			if(!Directory.Exists(saveDirectory))
 				Directory.CreateDirectory(saveDirectory);
